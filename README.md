@@ -27,6 +27,6 @@ This is a variation on th files above with separate buttons for each operation. 
 
 This calculator takes a different approach. The aim is to replicate a tradition hand held calculator. There are different buttons for all the input numbers and opertors etc. Each calls different function:
 
-<img src="https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/BasicCalculatorSeparateButtons.png" alt="Basic Calculator with separate operator buttons" width=600>
+<img src="https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/TradCalc.png" alt="An emulation of a tradition hand held calculator" width=600>
 
 
