@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Basic Calculator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- code to make the page responsive - i.e. automatically change size -->
+
+<style>
+	body {
+		font-family: "arial";
+		color: black;
+		background-color: lightgreen;
+		
+	}
+	div {
+		height: 260px;
+		width: 50%;
+		background-color: lightyellow;
+		border-style: solid;
+		border-radius: 15px;
+		border-color: green;
+		Padding: 10px;
+		box-shadow: 10px 10px 10px 10px green;
+	}
+	
+	input[type=text] {
+	    width: 40vw;
+		background-color: white;
+		font-family: "courier new";
+		border-radius: 5px;
+		font-size: 2vw;
+	}
+	
+	select {
+	    width: 50%;
+		background-color: yellow;
+		color: green;
+		font-family: "verdana";
+		border-radius: 5px;
+		font-size: 15px;
+	}
+	
+	button {
+		background-color: green;
+		color: lightgreen;
+		font-family: "arial";
+		border-radius: 15px;
+		width: 20%;
+	    font-size: 20px;
+		box-shadow: 5px 5px 2px 2px darkgreen;
+	}
+	
+</style>
+
+<script>
+//Global Variables
+var Num1=5;
+//var Num2;
+//Populate Global Variables
+function getNumbers() {
+Num1 = document.getElementById("NO1").value*1;
+Num2 = document.getElementById("NO2").value*1;
+}
+
+
+//Functions
+function add() {
+	getNumbers()
+	document.getElementById("Answer").value=Num1 + Num2;
+	}
+	
+function subtract() {
+	getNumbers()
+	document.getElementById("Answer").value=Num1 - Num2;
+	}
+
+function multiply() {
+	getNumbers()
+	document.getElementById("Answer").value=Num1 * Num2;
+	}
+
+function divide() {
+	getNumbers()
+	document.getElementById("Answer").value=Num1 / Num2;
+	}	
+
+
+</script>
+</head>
+
+<body>
+<h1>Basic Calculator</h1>
+<div>
+<p>&nbsp;</p>
+Number 1: <input type="text" id="NO1" name="No1" width=20%><br/>&nbsp;<br/>	
+Number 2: <input type="text" id="NO2" name="No2" width=20%><br/>&nbsp;<br/>		
+Answer: &nbsp;&nbsp;&nbsp;<input type="text" readonly  id="Answer" name="Answer" width=20%><br/>&nbsp;<br/>
+
+<button type="button" onClick="add()">Add</button>&nbsp;
+<button type="button" onClick="subtract()">Subtract</button>&nbsp;
+<button type="button" onClick="multiply()">Multiply</button>&nbsp;
+<button type="button" onClick="divide()">Divide</button>&nbsp;
+<p>&nbsp;</p>
+</div>
+</body>
