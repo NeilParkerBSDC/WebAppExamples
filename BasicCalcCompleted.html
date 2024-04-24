@@ -1,0 +1,115 @@
+<!doctype html>
+<html> <!--
+<!-- My commentary is in comment tags -->
+<head>
+<!-- The head section contains information about the file-->
+<meta charset="UTF-8">
+<title>Basic Calculator</title>
+<!--
+You could have the Style in a separate file. 
+This is best practice if you have a website of several 
+pages which all reference the same style information. 
+I have included the Style (CSS), Script (JavaScript 
+and interface (HTML) in one page for simplicity
+--> 
+<style>
+	body {
+		font-family: "arial";
+		color: darkgreen;
+		background-color: lightgreen;
+		
+	}
+	div {
+		height: 430px;
+		width: 50%;
+		background-color: darkgreen;
+		border-radius: 15px;
+		Padding: 10px;
+		color: yellow;
+	}
+	
+	input[type=text] {
+	    width: 49%;
+		background-color: white;
+		font-family: "courier new";
+		border-radius: 5px;
+		font-size: 15px;
+	}
+	
+	select {
+	    width: 50%;
+		background-color: darkgreen;
+		color: white;
+		font-family: "verdana";
+		border-radius: 5px;
+		font-size: 15px;
+	}
+	
+	button {
+		background-color: #C0C0C0;
+		font-family: "arial";
+		border-radius: 5px;
+		width: 50%;
+	    font-size: 20px;
+	}
+	
+</style>
+<!--
+You could have the Script in a separate file. 
+This is best practice if you have a website of several 
+pages which all reference the same style information. 
+I have included the Style (CSS), Script (JavaScript 
+and interface (HTML) in one page for simplicity
+--> 
+<script>
+function calculate() {
+Num1 = document.getElementById("NO1").value; // Getting the first number from the textbox form element labelled "NO2"
+Num2 = document.getElementById("NO2").value; // Getting the second number from the textbox form element labelled "NO2"
+operator = document.getElementById("operator").value; // Getting the operator from the form element labelled 'operator' - a dropdown menu
+
+//if statement that carries out different operation depending on the operator variable
+if (operator=="add") {
+	document.getElementById("Answer").value=Num1*1 + Num2*1;
+	}
+else if (operator=="subtract") {
+  document.getElementById("Answer").value=Num1 - Num2;
+	}
+else if (operator=="multiply") {
+  document.getElementById("Answer").value=Num1 * Num2;
+	}
+else if (operator=="divide") {
+  document.getElementById("Answer").value=Num1 / Num2;
+	}
+else {
+	document.getElementById("Answer").value="Error in operator entered";
+	}
+	
+}
+
+
+</script>
+</head>
+
+<body>
+<!--The body section contains the information which is shown in the browser window -->
+<h1>Basic Calculator</h1><!--This is a top level (level 1) heading-->
+
+<div><!--A Div is a section on the page (a bit like a text box -->
+<p>&nbsp;</p><!-- A paragraph (<p></p>) with a blank space character (&nbsp;)-->
+Number 1: <input type="text" id="NO1" name="No1" width=20%><br/>&nbsp;<br/><!-- a Text box labelled "NO1" -->
+Operator: 
+        <select id="operator" name="operator"> <!-- A drop down menu labelled "Operator" -->
+            <option value="add">Addition (+)</option>
+            <option value="subtract">Subtraction (-)</option>
+            <option value="multiply">Multiplication (*)</option>
+            <option value="divide">Division (/)</option>
+        </select>
+<p>&nbsp;</p>		
+Number 2: <input type="text" id="NO2" name="No2" width=20%><br/>&nbsp;<br/><!-- a Text box labelled "NO2" -->
+<p>&nbsp;</p>		
+Answer: &nbsp;&nbsp;&nbsp;<input type="text" readonly  id="Answer" name="Answer" width=20%><br/>&nbsp;<br/>
+<p>&nbsp;</p>
+<button type="button" onClick="calculate()">Calculate</button><!-- A button which calls the calculate function "calculate()" from the JavaScript code wirtten in the <script></script> section above. -->
+<p>&nbsp;</p>
+</div>
+</body>
