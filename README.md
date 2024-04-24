@@ -34,7 +34,6 @@ This calculator takes a different approach. The aim is to replicate a tradition 
 The operation of this app is as follows:
 
 ```mermaid
-graph TD
 
 flowchart TD
     Start((Start)) --> FN1-1(Enter digit for first number)
