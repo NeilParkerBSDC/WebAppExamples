@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Traditional Calculator</title>
+
+<style>
+	body {
+		font-family: "arial";
+		color: #C0C0C0;
+		background-color: darkred;
+		
+	}
+	input[type=text] {
+	    width: 49%;
+		background-color: #C0C0C0;
+		font-family: "courier new";
+		border-radius: 15px;
+		font-size: 20px;
+	}
+	
+		button {
+		background-color: #C0C0C0;
+		font-family: "arial";
+		border-radius: 15px;
+		width: 100%;
+	    font-size: 20px;
+	}
+	
+</style>
+
+<script>
+// set up Global Variables:
+	var number1=0;
+	var number2=0;
+	var pickedOperator="";
+	displayValue="";
+	
+//Functions:
+	
+	function ClearDisplay() {
+		displayValue="";
+		document.getElementById("display").value="";
+		
+	}
+	function getNumber() {
+		numberGot=displayValue*1;
+		document.getElementById("display").value="";
+		return(numberGot)
+	}
+	function displayAdd(inputValue) {
+		displayValue+=inputValue;
+		document.getElementById("display").value=displayValue;
+	}
+	
+	function add(No1,No2) {
+		answer=No1 + No2;
+		document.getElementById("display").value=answer;
+	}
+	
+	function subtract(No1,No2) {
+		answer=No1 - No2;
+		document.getElementById("display").value=answer;
+	}
+	function multiply(No1,No2) {
+		answer=No1 * No2;
+		document.getElementById("display").value=answer;
+	}
+	function divide(No1,No2) {
+		answer=No1 / No2;
+		document.getElementById("display").value=answer;
+	}
+	
+	function operatorButton(operator) {
+		number1=getNumber();
+		ClearDisplay();
+		pickedOperator=operator;		
+	}
+	
+	function equalButton() {
+		number2=getNumber();
+		ClearDisplay()
+		if (pickedOperator=="+") {
+			add(number1, number2)
+		}
+		else if (pickedOperator=="-") {
+			subtract(number1, number2);
+		}
+		else if (pickedOperator=="*") {
+			multiply(number1, number2);
+		}
+		else if (pickedOperator=="/") {
+			divide(number1, number2);
+		}
+		else {
+			alert("invalid operator");
+		}
+		
+	}
+	
+	</script>
+</head>
+
+<body>
+<h1>Trad Calculator</h1>
+<input type="text" id="display" name="display" width=50%><br/>&nbsp;<br/>
+
+<table border=0 cellpadding=1 cellspacing="1" width=50%>
+	<tr>
+		<td colspan=4><button type="button" onClick="ClearDisplay()">Clear All</button></td>
+	</tr>
+	<tr>
+	<td width=25%><button type="button" onClick="displayAdd('1')">1</button></td>
+	<td width=25%><button type="button" onClick="displayAdd('2')">2</button></td>
+	<td width=25%><button type="button" onClick="displayAdd('3')">3</button></td>
+	<td width=25%><button type="button" onClick="operatorButton('+')">+</button></td>
+	</tr>
+	<tr>
+	<td><button type="button" onClick="displayAdd('4')">4</button></td>
+	<td><button type="button" onClick="displayAdd('5')">5</button></td>
+	<td><button type="button" onClick="displayAdd('6')">6</button></td>
+	<td><button type="button" onClick="operatorButton('-')">-</button></td>
+	</tr>
+	<tr>
+	<td><button type="button" onClick="displayAdd('7')">7</button></td>
+	<td><button type="button" onClick="displayAdd('8')">8</button></td>
+	<td><button type="button" onClick="displayAdd('9')">9</button></td>
+	<td><button type="button" onClick="operatorButton('*')">*</button></td>
+	</tr>
+	<tr>
+	<td><button type="button" onClick="displayAdd('0')">0</button></td>
+	<td><button type="button" onClick="displayAdd('.')">.</button></td>
+	<td><button type="button" onClick="displayAdd('')">?</button></td>
+	<td><button type="button" onClick="operatorButton('/')">/</button></td>
+	</tr>
+	<tr>
+		<td colspan=4><button type="button" onClick="equalButton()">=</button></td>
+	</tr>		
+</table>
+
+	
+</body>
+</html>
