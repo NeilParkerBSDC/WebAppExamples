@@ -29,4 +29,15 @@ This calculator takes a different approach. The aim is to replicate a tradition 
 
 <img src="https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/TradCalc.png" alt="An emulation of a tradition hand held calculator" width=600>
 
+[File Link](https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/TradCalc.html)
+
+The operation of this app is as follows:
+
+```mermaid
+graph TD
+
+a --> b
+
+```
+
 
