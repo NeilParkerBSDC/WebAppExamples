@@ -14,3 +14,11 @@ and interface (HTML) in one page for simplicity:
 
 * * *
 *Further Files Yet To Be added*
+
+## 2) BasicCalcCompletedSeparateButtons.html
+
+This is a variation on th files above with separate buttons for each operation. This means putting each operation (i.e. +, -, *, /) into different functions which are called in turn by the four seprate buttons
+
+<img src="https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/BasicCalculator.png" alt="Basic Calculator screenshot" width=600>
+
+[File Link]()
