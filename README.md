@@ -54,7 +54,7 @@ flowchart TD
     Eq2{Which Operator}--> | Plus | EQ3-1(Answer=NO1 + NO2)
     Eq2--> | Minus | EQ3-2(Answer=NO1 - NO2)
     Eq2--> | Multiply | EQ3-3(Answer=NO1 * NO2)
-    Eq2--> | Multiply | EQ3-4(Answer=NO1 / NO2)
+    Eq2--> | Divide| EQ3-4(Answer=NO1 / NO2)
     EQ3-1 --> DA(Display Answer)
     EQ3-2 --> DA(Display Answer)
     EQ3-3 --> DA(Display Answer)
