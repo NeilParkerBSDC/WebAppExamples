@@ -36,7 +36,31 @@ The operation of this app is as follows:
 ```mermaid
 graph TD
 
-a --> b
+flowchart TD
+    Start((Start)) --> FN1-1(Enter digit for first number)
+    FN1-1 --> FN1-2(Digit added to display \n on the right of \n any numbers already \n being displayed)
+    FN1-2 -->FN1-3{Enter another digit?}
+    FN1-3 --> | Yes | FN1-1
+    FN1-3 --> | No | FO(Click on operator button)
+    FO --> FO1[/Number in display added \n to memory as No1/]
+    FO1 --> FO2(Display cleared)
+    FO2 --> FO3[/Operator stored based on which \n operator button was pressed/]
+    FO3 --> FN2-1(Enter digit for second number)
+    FN2-1 --> FN2-2(Digit added to display \n on the right of \n any numbers already \n being displayed)
+    FN2-2 -->FN2-3{Enter another digit?}
+    FN2-3 --> | Yes | FN2-1
+    FN2-3 --> | No | Eq(Click on Equals button)
+    Eq --> Eq1[/Number in display added \n to memory as No2/]
+    Eq1 --> Eq2(Display cleared)
+    Eq2{Which Operator}--> | Plus | EQ3-1(Answer=NO1 + NO2)
+    Eq2--> | Minus | EQ3-2(Answer=NO1 - NO2)
+    Eq2--> | Multiply | EQ3-3(Answer=NO1 * NO2)
+    Eq2--> | Multiply | EQ3-4(Answer=NO1 / NO2)
+    EQ3-1 --> DA(Display Answer)
+    EQ3-2 --> DA(Display Answer)
+    EQ3-3 --> DA(Display Answer)
+    EQ3-4 --> DA(Display Answer)
+    DA --> End((End))
 
 ```
 
