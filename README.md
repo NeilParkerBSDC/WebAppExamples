@@ -22,3 +22,11 @@ This is a variation on th files above with separate buttons for each operation. 
 <img src="https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/BasicCalculatorSeparateButtons.png" alt="Basic Calculator with separate operator buttons" width=600>
 
 [File Link](https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/BasicCalcCompletedSeparateButtons.html)
+
+## 3) TradCalc.html
+
+This calculator takes a different approach. The aim is to replicate a tradition hand held calculator. There are different buttons for all the input numbers and opertors etc. Each calls different function:
+
+<img src="https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/BasicCalculatorSeparateButtons.png" alt="Basic Calculator with separate operator buttons" width=600>
+
+
