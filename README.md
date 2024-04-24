@@ -17,7 +17,7 @@ and interface (HTML) in one page for simplicity:
 
 ## 2) BasicCalcCompletedSeparateButtons.html
 
-This is a variation on th files above with separate buttons for each operation. This means putting each operation (i.e. +, -, *, /) into different functions which are called in turn by the four seprate buttons
+This is a variation on th files above with separate buttons for each operation. This means putting each operation (i.e. +, -, *, /) into different functions which are called in turn by the four seprate buttons. I have also tweeked the CSS to give the ```<div>``` and the buttons a drop shadow.
 
 <img src="https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/BasicCalculatorSeparateButtons.png" alt="Basic Calculator with separate operator buttons" width=600>
 
