@@ -19,6 +19,6 @@ and interface (HTML) in one page for simplicity:
 
 This is a variation on th files above with separate buttons for each operation. This means putting each operation (i.e. +, -, *, /) into different functions which are called in turn by the four seprate buttons
 
-<img src="https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/BasicCalculator.png" alt="Basic Calculator screenshot" width=600>
+<img src="https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/BasicCalculatorSeparateButtons.png" alt="Basic Calculator with separate operator buttons" width=600>
 
 [File Link](https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/BasicCalcCompletedSeparateButtons.html)
