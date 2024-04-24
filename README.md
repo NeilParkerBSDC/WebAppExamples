@@ -7,7 +7,7 @@ The following files are included in this repository
 This file is a basic calculator app. I have included the Style (CSS), Script (JavaScript 
 and interface (HTML) in one page for simplicity:
 
-![Basic Calculator screenshot](https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/BasicCalculator.png | width=200))
+<img src="https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/BasicCalculator.png" alt="Basic Calculator screenshot" width=200>
 
 
 [File Link](https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/BasicCalcCompleted.html)
