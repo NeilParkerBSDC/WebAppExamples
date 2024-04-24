@@ -12,8 +12,6 @@ and interface (HTML) in one page for simplicity:
 
 [File Link](https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/BasicCalcCompleted.html)
 
-* * *
-*Further Files Yet To Be added*
 
 ## 2) BasicCalcCompletedSeparateButtons.html
 
@@ -51,7 +49,7 @@ flowchart TD
     FN2-3 --> | No | Eq(Click on Equals button)
     Eq --> Eq1[/Number in display added \n to memory as No2/]
     Eq1 --> Eq2(Display cleared)
-    Eq2{Which Operator}--> | Plus | EQ3-1(Answer=NO1 + NO2)
+    Eq2{Which Operator?}--> | Plus | EQ3-1(Answer=NO1 + NO2)
     Eq2--> | Minus | EQ3-2(Answer=NO1 - NO2)
     Eq2--> | Multiply | EQ3-3(Answer=NO1 * NO2)
     Eq2--> | Divide| EQ3-4(Answer=NO1 / NO2)
