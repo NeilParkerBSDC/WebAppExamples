@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<!-- information about the file is placed in the head section -->
+<title>Dice Roller</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- code to make the page responsive - i.e. automatically change size -->
+
+<!-- Style information goes below -->
+<style>
+body {
+    background-color: #FFFFFF;
+    font-family: "arial", "verdana";
+    font-size: 2vw;
+	color: #e7e3ef
+     }
+h1 {
+     font-family: "arial", "verdana";
+    font-size: 7vw;
+	color: #330033   
+	}
+#Panel {
+      position: relative;
+      max-width:1400px;
+	  min-width:400px;
+      min-height:300px;
+	  max-height:500px;
+	  background-color: #492c93;
+   }
+option {
+    font-size: 2vw; 
+}
+select {
+	font-size: 2vw;  
+	border-radius: 8px; 		
+}
+input[type ="Text"] {
+	font-size: 5vw; 
+	background-color:#492c93;
+	color: #FFFFFF;
+	border: 0px;	
+	border-radius: 4px;	
+}
+input[type="submit"] {
+	font-size: 2vw; 
+}   
+</style>
+<!-- JavaScript code goes below: set up functions to be called by events triggered from controls created with html form elements -->
+
+<script>
+function RandomNumber() {
+	// get dice type
+	diceType=document.getElementsByName('DiceType')[0].value;
+	
+	//generate random number
+	RandNo=Math.random();
+	numberRolled=Math.floor(RandNo*diceType)+1;
+	document.getElementsByName('rolled')[0].value=numberRolled;
+	// display it
+}
+</script>
+</head>
+
+<body>
+<h1>Dice Roller Version 2</h1>
+
+<div id="Panel">
+<p> we are now making better use of html form elements to make the app much more event driven and user friendly</p>
+
+<!-- we are now going to create a drop down box to select the dice type. This means
+we do not need to worry about users not selecting a valdi option -->
+
+<p>Dice Type:</p>
+<select name="DiceType">
+  <option value="4">4</option>
+  <option value="6">6</option>     
+  <option value="12">12</option>     
+</select>
+<br/>
+<p>Number Rolled:</p>
+<input type ="Text" Name="rolled" readonly></input>
+<input type="submit" onclick=RandomNumber() value="Roll dice"></input><br/>
+</div>
+</body>
+</html>
+
