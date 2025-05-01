@@ -8,7 +8,7 @@ This file is a simple app which allows users to select a dice type (i.e. 4, 6 or
 
 <img src="https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/DiceRollerWebApp.png" alt="Basic Calculator screenshot" width=600>
 
-[File Link](https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/DiceRoller2.html)
+[File Link](https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/Diceroller2.html)
 
 ## 2) BasicCalcCompleted.html
 
