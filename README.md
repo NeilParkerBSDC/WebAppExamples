@@ -2,7 +2,11 @@
 
 The following files are included in this repository
 
-## 1) BasicCalcCompleted.html
+## 1) Diceroller2.html
+
+This file is a simple app which allows users to select a dice type (i.e. 4, 6 or 12 sided) and then simulate a dice roll to proudce a random number within the range of that dice type.
+
+## 2) BasicCalcCompleted.html
 
 This file is a basic calculator app. I have included the Style (CSS), Script (JavaScript 
 and interface (HTML) in one page for simplicity:
@@ -13,7 +17,7 @@ and interface (HTML) in one page for simplicity:
 [File Link](https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/BasicCalcCompleted.html)
 
 
-## 2) BasicCalcCompletedSeparateButtons.html
+## 3) BasicCalcCompletedSeparateButtons.html
 
 This is a variation on th files above with separate buttons for each operation. This means putting each operation (i.e. +, -, *, /) into different functions which are called in turn by the four seprate buttons. I have also tweeked the CSS to give the ```<div>``` and the buttons a drop shadow.
 
@@ -21,7 +25,7 @@ This is a variation on th files above with separate buttons for each operation. 
 
 [File Link](https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/BasicCalcCompletedSeparateButtons.html)
 
-## 3) TradCalc.html
+## 4) TradCalc.html
 
 This calculator takes a different approach. The aim is to replicate a tradition hand held calculator. There are different buttons for all the input numbers and opertors etc. Each calls different function:
 
