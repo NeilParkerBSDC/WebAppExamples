@@ -4,7 +4,10 @@ The following files are included in this repository
 
 ## 1) Diceroller2.html
 
-This file is a simple app which allows users to select a dice type (i.e. 4, 6 or 12 sided) and then simulate a dice roll to proudce a random number within the range of that dice type.
+This file is a simple app which allows users to select a dice type (i.e. 4, 6 or 12 sided) and then simulate a dice roll to proudce a random number within the range of that dice type:
+<img src="https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/DiceRollerWebApp.png" alt="Basic Calculator screenshot" width=600>
+
+[File Link](https://github.com/NeilParkerBSDC/WebAppExamples/blob/main/DiceRoller2.html)
 
 ## 2) BasicCalcCompleted.html
 
